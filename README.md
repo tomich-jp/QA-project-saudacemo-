@@ -1,2 +1,2 @@
-# QA-project-saudacemo-
-projeto de testes do e-commerce Saudacemo
+# QA-project-saucedemo-
+projeto de testes do e-commerce Saucedemo
