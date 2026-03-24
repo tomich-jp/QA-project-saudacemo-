@@ -6,13 +6,13 @@
 ## 1. Introdução
 
 Este documento descreve o plano de testes para o e-commerce SauceDemo.  
-O objetivo é validar os principais fluxos críticos da aplicação, desde a autenticação do usuário até a finalização da compra, garantindo que o sistema esteja funcional, estável e alinhado às regras de negócio esperadas.
+O objetivo é validar os principais fluxos críticos da aplicação, desde a autenticação do usuário até a finalização da compra, garantindo que o sistema esteja funcional, estável e alinhado às expectativas do usuário.
 
 ---
 
 ## 2. Objetivo do Plano de Testes
 
-Garantir que as funcionalidades críticas do sistema estejam operando corretamente, reduzindo o risco de falhas em produção e assegurando conformidade com os critérios de aceite definidos.
+Garantir que as funcionalidades críticas do sistema estejam operando corretamente, reduzindo o risco de falhas e garantindo estabilidade, confiabilidade e conformidade com os fluxos esperados do sistema..
 
 Os testes serão estruturados para cobrir integralmente os fluxos principais do sistema:
 
@@ -42,13 +42,13 @@ Os testes serão estruturados para cobrir integralmente os fluxos principais do 
 
 ## 4. Ambiente de Testes
 
-- **URL da aplicação:** https://sauce-demo.myshopify.com/  
+- **URL da aplicação:** https://www.saucedemo.com/ 
 - **Sistema Operacional:** Windows 11  
 - **Navegador:** Google Chrome (versão estável mais recente)  
 - **Dispositivo:** Desktop  
 - **Ferramentas de apoio:**  
   - DevTools (Chrome)  
-  - Cypress (para futura automação)
+  - Cypress (para automação)
 
 ---
 
@@ -56,14 +56,14 @@ Os testes serão estruturados para cobrir integralmente os fluxos principais do 
 
 A execução dos testes seguirá a seguinte ordem:
 
-1. Análise dos requisitos e critérios de aceite  
+1. Exploração do site e suas funcionalidades
 2. Criação dos cenários de teste  
 3. Elaboração dos casos de teste  
 4. Execução de testes manuais  
 5. Registro e reporte de bugs  
-6. Reteste após correções  
-7. Execução de testes de regressão  
-8. Automação dos fluxos críticos (quando aplicável)  
+6. Automação dos cenários críticos com Cypress  
+7. Execução da suíte de regressão automatizada  
+8. Execução dos testes End-to-End 
 
 Serão aplicadas as seguintes abordagens:
 
@@ -71,6 +71,7 @@ Serão aplicadas as seguintes abordagens:
 - Testes Exploratórios  
 - Testes de Interface (UI)  
 - Testes de Regressão  
+- Testes End to End
 
 ---
 
@@ -78,9 +79,7 @@ Serão aplicadas as seguintes abordagens:
 
 Os testes poderão ser iniciados quando:
 
-- A funcionalidade estiver desenvolvida e disponível para validação  
-- Os critérios de aceite estiverem definidos  
-- As regras de negócio estiverem claras  
+- A funcionalidade estiver disponível para validação    
 - O ambiente estiver acessível e estável  
 
 ---
@@ -90,7 +89,7 @@ Os testes poderão ser iniciados quando:
 Os testes serão considerados concluídos quando:
 
 - Todos os cenários planejados forem executados  
-- Bugs críticos e de alta severidade estiverem corrigidos ou formalmente aceitos pelo time  
+- Bugs críticos e de alta severidade forem formalmente documentados 
 - Os fluxos principais estiverem validados  
 - Evidências da execução estiverem documentadas  
 
@@ -98,10 +97,10 @@ Os testes serão considerados concluídos quando:
 
 ## 8. Cronograma (Simulado)
 
-- Dia 1 – Análise de requisitos  
-- Dia 2 – Criação de cenários e casos de teste  
-- Dia 3 – Execução dos testes manuais  
-- Dia 4 – Retestes e regressão  
+- Dia 1 – Análise e planejamento
+- Dia 2 – Criação de cenários e casos de teste
+- Dia 3 – Execução manual e reporte de bugs
+- Dia 4 – Automação e regressão
 
 ---
 
@@ -113,6 +112,7 @@ Os testes serão considerados concluídos quando:
 | Instabilidade do ambiente | Validar ambiente antes da execução |
 | Falta de massa de teste | Criar dados de teste controlados |
 | Mudanças inesperadas na aplicação | Reexecutar cenários críticos |
+| Dependência de dados inconsistentes | Validar e padronizar massa de teste |
 
 ---
 
@@ -124,6 +124,21 @@ Os testes serão considerados concluídos quando:
 - Casos de Teste detalhados  
 - Relatório de Bugs  
 - Evidências (prints e registros)  
-- Scripts de automação (quando aplicável)  
+- Scripts de automação  
 
 ---
+
+## 11. Gestão de Defeitos
+
+Os defeitos encontrados serão registrados no GitHub contendo:
+
+- Título do bug
+- Descrição
+- Passos para reprodução
+- Resultado esperado
+- Resultado atual
+- Evidências (prints)
+- Severidade (Baixa, Média, Alta, Crítica)
+
+---
+

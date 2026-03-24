@@ -37,16 +37,20 @@ Essas áreas foram consideradas fora do escopo por não influenciarem diretament
 Serão aplicadas as seguintes abordagens:
 
 ### 3.1 Testes Funcionais  
-Validação do comportamento do sistema conforme os requisitos esperados.
+Validação do comportamento das funcionalidades do sistema.
 
 ### 3.2 Testes Exploratórios  
 Exploração livre da aplicação com foco em identificar comportamentos inesperados e possíveis falhas.
 
-### 3.3 Testes de Regressão  
-Reexecução de cenários críticos após correções para garantir que alterações não impactaram funcionalidades já validadas.
-
-### 3.4 Testes de Interface (UI Testing)  
+### 3.3 Testes de Interface (UI Testing)  
 Validação visual e estrutural dos elementos da interface do usuário.
+
+### 3.4 Testes de Regressão
+Reexecução de cenários críticos com automação após a execução dos testes manuais para garantir que alterações não impactaram funcionalidades já validadas.
+
+### 3.5 Testes de Sistema (End-to-End)
+
+Simular a jornada completa do usuário, validando a integração entre as funcionalidades do sistema.
 
 ---
 
@@ -56,7 +60,6 @@ Os testes serão iniciados quando:
 
 - A aplicação estiver disponível e acessível  
 - O ambiente estiver estável  
-- A funcionalidade estiver considerada pronta para teste  
 
 ---
 
@@ -64,17 +67,18 @@ Os testes serão iniciados quando:
 
 Os testes serão considerados concluídos quando:
 
-- Todos os cenários planejados forem executados  
-- Bugs críticos e altos forem devidamente reportados  
-- Fluxos principais estiverem funcionando corretamente  
+- Todos os cenários críticos executados com evidência
+- Taxa de sucesso aceitável nos testes automatizados
+- Bugs críticos resolvidos ou devidamente documentados
 
 ---
 
 ## 6. Riscos Identificados
 
-- Requisitos não documentados  
+- Requisitos e criterios de aceite não documentados  
 - Instabilidade do ambiente  
 - Falta de massa de teste adequada  
-- Mudanças inesperadas na aplicação durante a execução  
+- Mudanças inesperadas na aplicação durante a execução 
+- Dependência de dados mockados ou inconsistentes 
 
 ---
