@@ -5,6 +5,24 @@
 
 ---
 
+## 📊 Resumo dos Casos de Teste - Login
+
+| ID | Cenário | Dados de Entrada | Resultado Esperado | Prioridade |
+|----|--------|------------------|--------------------|------------|
+| CT-LOGIN-01 | Login válido | standard_user / secret_sauce | Redireciona para inventário | Alta |
+| CT-LOGIN-02 | Login inválido | standard_user123 / secret_sauce01 | Exibe erro de credenciais inválidas | Alta |
+| CT-LOGIN-03 | Campos vazios | - | Exibe erro "Username is required" | Alta |
+| CT-LOGIN-04 | Username vazio | senha válida | Exibe erro "Username is required" | Alta |
+| CT-LOGIN-05 | Password vazio | usuário válido | Exibe erro "Password is required" | Alta |
+| CT-LOGIN-06 | Usuário bloqueado | locked_out_user / secret_sauce | Exibe erro de usuário bloqueado | Alta |
+| CT-LOGIN-07 | Usuário problemático | problem_user / secret_sauce | Login realizado com possíveis inconsistências | Média |
+
+---
+
+## 🧾 Casos de Teste Detalhados
+
+---
+
 ## CT-LOGIN-01 - Login válido
 
 **Prioridade:** Alta  
